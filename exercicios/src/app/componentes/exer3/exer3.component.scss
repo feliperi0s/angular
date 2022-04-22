@@ -1,0 +1,23 @@
+div {
+    width: 400px;
+    height: 400px;
+    background-color: #173540;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    margin-top: 200px;
+    color: white;
+}
+p {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    height: 30px;
+    width: 50px;
+    background-color: #84B026;
+    color: #3D3D3D;
+}

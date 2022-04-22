@@ -1,10 +1,12 @@
-<input type="number" name="number1" [(ngModel)]="number1">
-<input type="number" name="number2" [(ngModel)]="number2">
-<input type="hidden" name="soma" [(ngModel)]="soma">
-<button (click)="calcularSoma()" class="btn btn-primary">somar</button>
-<button (click)="calcularSub()" class="btn btn-primary">subtrair</button>
-<button (click)="calcularX()" class="btn btn-primary">Multiplicar</button>
-<button (click)="calcularDiv()" class="btn btn-primary">Dividir</button>
-<p>
-  {{ soma }} <br>
-</p>
+<div>
+  <input type="number" name="number1" [(ngModel)]="number1">
+  <input type="number" name="number2" [(ngModel)]="number2">
+  <input type="hidden" name="soma" [(ngModel)]="soma">
+  <button (click)="calcularSoma()" class="btn btn-primary">somar</button>
+  <button (click)="calcularSub()" class="btn btn-primary">subtrair</button>
+  <button (click)="calcularX()" class="btn btn-primary">Multiplicar</button>
+  <button (click)="calcularDiv()" class="btn btn-primary">Dividir</button>
+  <p>
+    {{ soma }} <br>
+  </p>
+</div>

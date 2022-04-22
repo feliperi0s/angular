@@ -1,0 +1,10 @@
+<div>
+    <h1>Exercicios 4 e 5</h1>
+    <form [formGroup]="_form" (ngSubmit)="submit()">
+        <input type="text" formControlName="nome" placeholder="Nome"> <br>
+        <input type="text" formControlName="email" placeholder="e-mail"><br>
+        <input type="text" formControlName="nomeFilme" placeholder="Nome do Filme"><br>
+        <input type="number" formControlName="avaliacao" placeholder="Nota" max="10" min="0"><br>
+        <button type="submit">Enviar!</button>
+    </form>
+</div>

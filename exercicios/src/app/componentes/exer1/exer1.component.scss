@@ -1,7 +1,7 @@
 div {
     width: 200px;
     height: 200px;
-    background-color: #439DF0;
+    background-color: #173540;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -9,13 +9,11 @@ div {
     align-items: center;
     align-content: center;
     border-radius: 10px;
+    margin-top: 200px;
 }
 input {
     padding: 2px;
     margin: 2px;
-}
-* {
-    font-family: sans-serif;
 }
 
 p {

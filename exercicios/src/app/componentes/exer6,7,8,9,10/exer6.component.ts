@@ -1,4 +1,4 @@
-import { WebService } from './../../service/services.service';
+import { WebService } from '../../service/services.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

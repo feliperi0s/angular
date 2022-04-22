@@ -1,5 +1,5 @@
-import { Exer6Component } from './componentes/exer6/exer6.component';
-import { Exer4Component } from './componentes/exer4/exer4.component';
+import { Exer6Component } from './componentes/exer6,7,8,9,10/exer6.component';
+import { Exer4Component } from './componentes/exer4,5/exer4.component';
 import { Exer3Component } from './componentes/exer3/exer3.component';
 import { Exer1Component } from './componentes/exer1/exer1.component';
 import { HomeComponent } from './componentes/home/home.component';

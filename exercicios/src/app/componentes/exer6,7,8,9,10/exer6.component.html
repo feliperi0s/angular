@@ -1,0 +1,8 @@
+<div>
+    <h1>Filme: {{dadosFilme?.original_title}}</h1>
+    <p>Sobre: {{dadosFilme?.overview}}</p>
+    <p>Média de votos: {{dadosFilme?.vote_average}}</p>
+    <p>Contagem de votos: {{dadosFilme?.vote_count}}</p>
+    <img [src]="'https://image.tmdb.org/t/p/w500/' + dadosFilme?.poster_path">
+    <button (click)="filmeAnterior()">Anterior</button><button (click)="proximoFilm()">Proximo</button>
+</div>
