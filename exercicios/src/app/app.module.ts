@@ -1,3 +1,4 @@
+import { WebService } from './service/services.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +11,7 @@ import { Exer3Component } from './componentes/exer3/exer3.component';
 import { Exer4Component } from './componentes/exer4/exer4.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Exer6Component } from './componentes/exer6/exer6.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,8 +28,9 @@ import { Exer6Component } from './componentes/exer6/exer6.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [WebService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

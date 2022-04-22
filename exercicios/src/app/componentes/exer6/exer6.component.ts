@@ -1,3 +1,4 @@
+import { WebService } from './../../service/services.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exer6.component.scss']
 })
 export class Exer6Component implements OnInit {
+  
+  dadosFilme: any;
+  indiceFilme = 300
 
-  constructor() { }
+  constructor(private web:WebService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+    this.carregaDadosFilmes()
+  }
+
+  async carregaDadosFilmes() {
+    alert('carregando Filme ...')
+    this.dadosFilme = await this.web.requisicaoGet(this.indiceFilme,{})
+    alert('Filme carregado')
+  }
+
+  filmeAnterior(){
+    this.indiceFilme -= 1;
+    this.carregaDadosFilmes();
+  }
+
+  proximoFilm(){
+    this.indiceFilme += 1;
+    this.carregaDadosFilmes();
   }
 
 }
