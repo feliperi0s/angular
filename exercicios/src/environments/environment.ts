@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  filmesAPI: 'https://api.themoviedb.org/3/movie/'
+  filmesAPI: 'https://api.themoviedb.org/3/movie/popular?'
 };
 
 /*

@@ -9,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class Exer6Component implements OnInit {
   
   dadosFilme: any;
-  indiceFilme = 300
+  indiceFilme = 0;
+  
+
 
   constructor(private web:WebService) { }
 
@@ -18,10 +20,11 @@ export class Exer6Component implements OnInit {
   }
 
   async carregaDadosFilmes() {
-    alert('carregando Filme ...')
+    // alert('carregando Filme ...')
     this.dadosFilme = await this.web.requisicaoGet(this.indiceFilme,{})
-    alert('Filme carregado')
+    // alert('Filme carregado')
   }
+  
 
   filmeAnterior(){
     this.indiceFilme -= 1;
