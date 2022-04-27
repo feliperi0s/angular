@@ -1,1 +1,19 @@
-<p>jogo-da-velha works!</p>
+<p>O jogador atual é : {{primeiro}}</p>
+<p>O vencedor é : {{venc}}</p>
+<div class="linhas">
+    <span id="1a" class="tabuleiro" (click)="a1=this.primeiro;vencedor()">{{a1}}</span>
+    <span id="1b" class="tabuleiro" (click)="a2=this.primeiro;vencedor()">{{a2}}</span>
+    <span id="1c" class="tabuleiro"(click)="a3=this.primeiro;vencedor()">{{a3}}</span>
+</div>
+<div class="linhas">
+    <span id="2a" class="tabuleiro"(click)="b1=this.primeiro;vencedor()">{{b1}}</span>
+    <span id="2b" class="tabuleiro"(click)="b2=this.primeiro;vencedor()">{{b2}}</span>
+    <span id="2c" class="tabuleiro"(click)="b3=this.primeiro;vencedor()">{{b3}}</span>
+</div>
+<div class="linhas">
+    <span id="3a" class="tabuleiro"(click)="c1=this.primeiro;vencedor()">{{c1}}</span>
+    <span id="3b" class="tabuleiro"(click)="c2=this.primeiro;vencedor()">{{c2}}</span>
+    <span id="3c" class="tabuleiro"(click)="c3=this.primeiro;vencedor()">{{c3}}</span>
+</div>
+<button type="button" class="btn btn-outline-primary" (click)="zerar()">Reiniciar a partida</button><br>
+<button type="button" class="btn btn-outline-primary" (click)="mudarJogador()">Mudar jogador</button>
