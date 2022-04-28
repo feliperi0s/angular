@@ -32,31 +32,31 @@ export class JogoDaVelhaComponent implements OnInit {
 
   public quemComeca(){
     if (this.aletori%2 == 0) {
-      this.primeiro='X'
+      this.primeiro='../../../assets/images/gremio.png'
     }else{
-      this.primeiro='O'
+      this.primeiro='../../../assets/images/inter.png'
     }
   }
 
 
   public mudarJogador(){
-    if (this.primeiro == 'X') {
-      this.primeiro = 'O'
+    if (this.primeiro == '../../../assets/images/gremio.png') {
+      this.primeiro = '../../../assets/images/inter.png'
     }else{
-      this.primeiro = 'X'
+      this.primeiro = '../../../assets/images/gremio.png'
     }
   }
 
   public vencedor() {
-    if (this.a1 && this.a2 && this.a3 == "X" || this.b1 && this.b2 && this.b3 == "X" || this.c1 && this.c2 && this.c3 == "X" || this.a1 && this.b1 && this.c1 == "X" || this.a3 && this.b3 && this.c3 == "X" || this.a1 && this.b1 && this.c1 == "X" || this.a1 && this.b2 && this.c3 == "X" || this.a3 && this.b2 && this.c1 == "X") {
-     this.venc = "O vencedor é X"
-    }if(this.a1 && this.a2 && this.a3 == "O" || this.b1 && this.b2 && this.b3 == "O" || this.c1 && this.c2 && this.c3 == "O" || this.a1 && this.b1 && this.c1 == "O" || this.a3 && this.b3 && this.c3 == "O" || this.a1 && this.b1 && this.c1 == "O" || this.a1 && this.b2 && this.c3 == "O" || this.a3 && this.b2 && this.c1 == "O") {
-      this.venc = "O vencedor é O"
+    if (this.a1 && this.a2 && this.a3 == '../../../assets/images/gremio.png' || this.b1 && this.b2 && this.b3 == '../../../assets/images/gremio.png' || this.c1 && this.c2 && this.c3 == '../../../assets/images/gremio.png' || this.a1 && this.b1 && this.c1 == '../../../assets/images/gremio.png' || this.a3 && this.b3 && this.c3 == '../../../assets/images/gremio.png' || this.a1 && this.b1 && this.c1 == '../../../assets/images/gremio.png' || this.a1 && this.b2 && this.c3 == '../../../assets/images/gremio.png' || this.a3 && this.b2 && this.c1 == '../../../assets/images/gremio.png') {
+     this.venc = '../../../assets/images/gremio.png'
+    }if(this.a1 && this.a2 && this.a3 == '../../../assets/images/inter.png' || this.b1 && this.b2 && this.b3 == '../../../assets/images/inter.png' || this.c1 && this.c2 && this.c3 == '../../../assets/images/inter.png' || this.a1 && this.b1 && this.c1 == '../../../assets/images/inter.png' || this.a3 && this.b3 && this.c3 == '../../../assets/images/inter.png' || this.a1 && this.b1 && this.c1 == '../../../assets/images/inter.png' || this.a1 && this.b2 && this.c3 == '../../../assets/images/inter.png' || this.a3 && this.b2 && this.c1 == '../../../assets/images/inter.png') {
+      this.venc = '../../../assets/images/inter.png'
     }
   }
 
  public zerar() {
-  if (this.a1 = 'X' || "O" , this.a2 = 'X' || "O") {
+  if (this.a1 = '../../../assets/images/gremio.png' || '../../../assets/images/inter.png' , this.a2 = '../../../assets/images/gremio.png' || '../../../assets/images/inter.png') {
     this.a1 = ''
   }
  }
