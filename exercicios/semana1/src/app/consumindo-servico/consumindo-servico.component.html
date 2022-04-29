@@ -1,0 +1,18 @@
+<div class="jumbotron">
+    <div class="container">
+
+        <button type="button" class="btn btn-primary" (click)='getInfFromServiceAluno1()'> Aluno 1</button>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let info of InfDeAluno1" class="list-group-info">{{ info }}</li>
+        </ul>
+        <button type="button" class="btn btn-success" (click)='getInfFromServiceAluno2()'>Aluno 2</button>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let info of InfDeAluno2" class="list-group-info">{{info}}</li>
+        </ul>
+        <button type="button" class="btn btn-warning" (click)='getInfFromServiceAluno3()'>Aluno 3</button>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let info of InfDeAluno2" class="list-group-info">{{info}}</li>
+        </ul>
+
+    </div>
+</div>

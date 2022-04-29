@@ -12,6 +12,8 @@ import { Exer4Component } from './componentes/exer4,5/exer4.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Exer6Component } from './componentes/exer6,7,8,9,10/exer6.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ConsumindoServicoComponent } from './consumindo-servico/consumindo-servico.component';
+import { ShowestadosComponent } from './showestados/showestados.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     Exer3Component,
     Exer4Component,
     Exer6Component,
+    ConsumindoServicoComponent,
+    ShowestadosComponent,
   ],
   imports: [
     BrowserModule,
