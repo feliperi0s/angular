@@ -56,9 +56,27 @@ export class JogoDaVelhaComponent implements OnInit {
   }
 
  public zerar() {
-  if (this.a1 = '../../../assets/images/gremio.png' || '../../../assets/images/inter.png' , this.a2 = '../../../assets/images/gremio.png' || '../../../assets/images/inter.png') {
-    this.a1 = ''
-  }
+  this.primeiro = ''
+  this.venc = ''
+  this.a1=''
+  this.a2=''
+  this.a3=''
+  this.b1=''
+  this.b2=''
+  this.b3=''
+  this.c1=''
+  this.c2=''
+  this.c3 =''
+  this.aletori=Math.floor(Math.random() * 10);
+  this.quemComeca()
+ }
+
+ public verificar(tabela:string){
+   if(tabela = ''){
+    this.a1 = this.primeiro;
+    this.vencedor()
+    console.log(this.a1)
+   }
  }
 
 }
