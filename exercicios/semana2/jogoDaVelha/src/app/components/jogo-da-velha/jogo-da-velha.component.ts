@@ -48,10 +48,12 @@ export class JogoDaVelhaComponent implements OnInit {
   }
 
   public vencedor() {
-    if (this.a1 && this.a2 && this.a3 == '../../../assets/images/gremio.png' || this.b1 && this.b2 && this.b3 == '../../../assets/images/gremio.png' || this.c1 && this.c2 && this.c3 == '../../../assets/images/gremio.png' || this.a1 && this.b1 && this.c1 == '../../../assets/images/gremio.png' || this.a3 && this.b3 && this.c3 == '../../../assets/images/gremio.png' || this.a1 && this.b1 && this.c1 == '../../../assets/images/gremio.png' || this.a1 && this.b2 && this.c3 == '../../../assets/images/gremio.png' || this.a3 && this.b2 && this.c1 == '../../../assets/images/gremio.png') {
+    if (this.a1 && this.a2 && this.a3 === '../../../assets/images/gremio.png' || this.b1 && this.b2 && this.b3 === '../../../assets/images/gremio.png' || this.c1 && this.c2 && this.c3 === '../../../assets/images/gremio.png' || this.a1 && this.b1 && this.c1 === '../../../assets/images/gremio.png' || this.a3 && this.b3 && this.c3 === '../../../assets/images/gremio.png' || this.a1 && this.b1 && this.c1 === '../../../assets/images/gremio.png' || this.a1 && this.b2 && this.c3 === '../../../assets/images/gremio.png' || this.a3 && this.b2 && this.c1 === '../../../assets/images/gremio.png') {
      this.venc = '../../../assets/images/gremio.png'
-    }if(this.a1 && this.a2 && this.a3 == '../../../assets/images/inter.png' || this.b1 && this.b2 && this.b3 == '../../../assets/images/inter.png' || this.c1 && this.c2 && this.c3 == '../../../assets/images/inter.png' || this.a1 && this.b1 && this.c1 == '../../../assets/images/inter.png' || this.a3 && this.b3 && this.c3 == '../../../assets/images/inter.png' || this.a1 && this.b1 && this.c1 == '../../../assets/images/inter.png' || this.a1 && this.b2 && this.c3 == '../../../assets/images/inter.png' || this.a3 && this.b2 && this.c1 == '../../../assets/images/inter.png') {
+    }if(this.a1 && this.a2 && this.a3 === '../../../assets/images/inter.png' || this.b1 && this.b2 && this.b3 === '../../../assets/images/inter.png' || this.c1 && this.c2 && this.c3 === '../../../assets/images/inter.png' || this.a1 && this.b1 && this.c1 === '../../../assets/images/inter.png' || this.a3 && this.b3 && this.c3 === '../../../assets/images/inter.png' || this.a1 && this.b1 && this.c1 === '../../../assets/images/inter.png' || this.a1 && this.b2 && this.c3 === '../../../assets/images/inter.png' || this.a3 && this.b2 && this.c1 === '../../../assets/images/inter.png') {
       this.venc = '../../../assets/images/inter.png'
+    }else{
+      'empate'
     }
   }
 
