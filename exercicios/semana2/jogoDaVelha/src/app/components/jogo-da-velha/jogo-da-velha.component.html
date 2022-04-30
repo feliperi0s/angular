@@ -8,19 +8,19 @@
         </span>
     </div>
         <div class="linhas">   
-        <span id="1a" class="tabuleiro1" (click)="a1=this.primeiro;vencedor()"><img src={{a1}}></span>
-        <span id="1b" class="tabuleiro1" (click)="a2=this.primeiro;vencedor()"><img src={{a2}}></span>
-        <span id="1c" class="tabuleiro4"(click)="a3=this.primeiro;vencedor()"><img src={{a3}}></span>
+        <span id="1a" class="tabuleiro1" (click)="a1=this.primeiro;vencedor();mudarJogador()"><img src={{a1}}></span>
+        <span id="1b" class="tabuleiro1" (click)="a2=this.primeiro;vencedor();mudarJogador()"><img src={{a2}}></span>
+        <span id="1c" class="tabuleiro4"(click)="a3=this.primeiro;vencedor();mudarJogador()"><img src={{a3}}></span>
     </div>
     <div class="linhas">
-        <span id="2a" class="tabuleiro2"(click)="b1=this.primeiro;vencedor()"><img src={{b1}}></span>
-        <span id="2b" class="tabuleiro2"(click)="b2=this.primeiro;vencedor()"><img src={{b2}}></span>
-        <span id="2c" class="tabuleiro4"(click)="b3=this.primeiro;vencedor()"><img src={{b3}}></span>
+        <span id="2a" class="tabuleiro2"(click)="b1=this.primeiro;vencedor();mudarJogador()"><img src={{b1}}></span>
+        <span id="2b" class="tabuleiro2"(click)="b2=this.primeiro;vencedor();mudarJogador()"><img src={{b2}}></span>
+        <span id="2c" class="tabuleiro4"(click)="b3=this.primeiro;vencedor();mudarJogador()"><img src={{b3}}></span>
     </div>
     <div class="linhas">
-        <span id="3a" class="tabuleiro3"(click)="c1=this.primeiro;vencedor()"><img src={{c1}}></span>
-        <span id="3b" class="tabuleiro3"(click)="c2=this.primeiro;vencedor()"><img src={{c2}}></span>
-        <span id="3c" class="tabuleiro5"(click)="c3=this.primeiro;vencedor()"><img src={{c3}}></span>
+        <span id="3a" class="tabuleiro3"(click)="c1=this.primeiro;vencedor();mudarJogador()"><img src={{c1}}></span>
+        <span id="3b" class="tabuleiro3"(click)="c2=this.primeiro;vencedor();mudarJogador()"><img src={{c2}}></span>
+        <span id="3c" class="tabuleiro5"(click)="c3=this.primeiro;vencedor();mudarJogador()"><img src={{c3}}></span>
     </div>
     <div id="botao">
     <button type="button" class="btn btn-outline-primary" (click)="zerar()">Reiniciar a partida</button>
