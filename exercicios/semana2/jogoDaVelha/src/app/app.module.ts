@@ -7,6 +7,8 @@ import { JogoDaVelhaComponent } from './components/jogo-da-velha/jogo-da-velha.c
 import { BuscaComponent } from './components/busca/busca.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from './components/menu/menu.component';
+import { FullComponent } from './components/full/full.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { FormsModule } from '@angular/forms';
     JogoDaVelhaComponent,
     BuscaComponent,
     HomeComponent,
+    MenuComponent,
+    FullComponent,
     
 
   ],

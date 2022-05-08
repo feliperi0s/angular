@@ -1,2 +1,2 @@
-<input type="text" [(ngModel)]="buscar"> 
-{{buscar}}
+<input type="text" [(ngModel)]="buscar" (change)="digitadoNaBusca($event)"> 
+<p>{{buscar}}</p>

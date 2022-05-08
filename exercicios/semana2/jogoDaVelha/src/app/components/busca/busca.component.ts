@@ -7,13 +7,17 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class BuscaComponent implements OnInit {
 
-  @Output() outputEvent: EventEmitter<any> = new EventEmitter<any>();
+  @Output() enviarBusca : EventEmitter<any> = new EventEmitter<any>();
 
    buscar:string = ''
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  digitadoNaBusca(event:any){
+    this.enviarBusca.emit(this.buscar)
   }
 
 }
