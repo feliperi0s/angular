@@ -11,6 +11,8 @@ import { FullComponent } from './components/layouts/full/full.component';
 import { ContentComponent } from './components/layouts/content/content.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { EsqueciSenhaComponent } from "./publico/esqueci-senha/EsqueciSenhaComponent";
+import { FuncionariosComponent } from './funcionarios/funcionarios.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { EsqueciSenhaComponent } from "./publico/esqueci-senha/EsqueciSenhaCompo
     MenuComponent,
     FullComponent,
     ContentComponent,
-    SigninComponent,    
+    SigninComponent,
+    FuncionariosComponent,    
 
   ],
   imports: [
@@ -28,6 +31,7 @@ import { EsqueciSenhaComponent } from "./publico/esqueci-senha/EsqueciSenhaCompo
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],
